@@ -23,10 +23,10 @@ if (isset($_GET['p'])){
             echo "Password masih kosong";
         }
     } else if ($_GET['p'] == "gambar") {
-        $size = getimagesize($_FILES['berkas']['tmp_name']);//mengambil gambar
-        $image = "data:".$size['mine'].";base64,".
-                base64_encode(file_get_contents($FILES['berkas']['tmp_name'])); //menampilkan gambar
-
+        $size = getimagesize($_FILES['berkas']['tmp_name']); // mengambil size
+        $image = "data:".$size['mime'].";base64,".
+                 base64_encode(file_get_contents($_FILES['berkas']['tmp_name'])); // menampilkan gambar
+        
         echo "<image src='".$image."' width='720'>";
     }
 
