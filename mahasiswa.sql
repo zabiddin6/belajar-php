@@ -30,6 +30,8 @@ karena pada data mahasiswa ada id jurusan
 ke sheel xampp untuk menghubungkan database
 - comment mysql -u root : untuk mengyhubungakn koding kita ke mysql
 ket : kalo tidak bisa di cmd ke xampp ---> shell
+- comment show database ---> 
+- comment (CREATE DATABASE fakultas)--> memhubungkan database fakutas
 - comment use database --> untuk menggunakan database
 - comment show database; ---> untuk melihat data kita
 - comment show table; --->untuk melihat tabel kita
